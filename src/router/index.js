@@ -12,6 +12,16 @@ const routes = [
     component: () => import('../views/shop/Shop')
   },
   {
+    path: '/cartList',
+    name: 'CartList',
+    component: () => import('../views/cartList/CartList')
+  },
+  {
+    path: '/orderConfirmation/:id',
+    name: 'OrderConfirmation',
+    component: () => import('../views/orderConfirmation/OrderConfirmation')
+  },
+  {
     path: '/register',
     name: 'Register',
     component: () => import('../views/register/Register'),
